@@ -1,5 +1,5 @@
 #!/bin/bash
 
-Resultado=$(python3 ./remakeIproute.py)
+Resultado=$(python3 /usr/local/bin/remakeIproute.py)
 
 echo "$Resultado"

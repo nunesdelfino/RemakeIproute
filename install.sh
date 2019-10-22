@@ -15,7 +15,13 @@ if [[ $EUID == 0 ]];
 
     cp ./ipmake /usr/local/bin/
 
-    chmod +x /usr/local/bin/ipmake
+    chmod 777 /usr/local/bin/ipmake
+    chmod 777 /usr/local/bin/remakeIproute.py
+
+
+    echo "#################################################";
+    echo "          Finalizado!";
+    echo "#################################################";
 
 else
   echo "Por favor execute o script com permissões de super usuário!";

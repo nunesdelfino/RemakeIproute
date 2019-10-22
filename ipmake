@@ -1,0 +1,5 @@
+#!/bin/bash
+
+Resultado=$(python3 ./remakeIproute.py)
+
+echo "$Resultado"

@@ -55,10 +55,11 @@ for x , y in enumerate(Saida):
         Saida.insert(cont, "\n     ")
 
 for x , y in enumerate(Saida):
-    if NomePlacas[0] in y or NomePlacas[1] in y or NomePlacas[2] in y:
-        ResultadoSaida.append("\n" + "\n" + y)
-    else:
-        ResultadoSaida.append(y)
+    for w in range(0 , len(NomePlacas)):
+        if NomePlacas[w] in y:
+            ResultadoSaida.append("\n" + "\n" + y)
+        else:
+            ResultadoSaida.append(y)
 
 Saida = list()
 

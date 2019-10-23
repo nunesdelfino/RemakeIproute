@@ -54,12 +54,18 @@ for x , y in enumerate(Saida):
     if y == "qlen" or y =="brd":
         Saida.insert(cont, "\n     ")
 
-for x , y in enumerate(Saida):
-    for w in range(0 , len(NomePlacas)):
-        if NomePlacas[w] in y:
-            ResultadoSaida.append("\n" + "\n" + y)
-        else:
-            ResultadoSaida.append(y)
+for indice1 , item1 in enumerate(Saida):
+    for indice2, item2 in enumerate(NomePlacas):
+        if item1 == item2:
+            ResultadoSaida.append('\n\n')
+    ResultadoSaida.append(item1)
+
+
+# for x , y in enumerate(Saida):
+#     if NomePlacas[0] in y or NomePlacas[1] in y or NomePlacas[2] in y:
+#         ResultadoSaida.append("\n" + "\n" + y)
+#     else:
+#         ResultadoSaida.append(y)
 
 Saida = list()
 

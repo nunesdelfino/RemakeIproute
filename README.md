@@ -13,5 +13,7 @@
 
 ## Usando
 
-##### Clone o repositório, de permissão de execução para o install.sh e execute-o como root ou usando o sudo
+##### Clone o repositório
+##### Dê permissão de execução para o install.sh
+##### Execute o install.sh como root ou usando o sudo
 ##### Depois apenas execute no terminal ipmake

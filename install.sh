@@ -11,12 +11,16 @@ echo "#################################################";
 if [[ $EUID == 0 ]];
   then
 
-    cp ./remakeIproute.py /usr/local/bin/
+    echo "#################################################";
+    echo "Acesso root OK!";
+    echo "#################################################";
+
+    cp ./rmkip.py /usr/local/bin/
 
     cp ./ipmake /usr/local/bin/
 
     chmod 777 /usr/local/bin/ipmake
-    chmod 777 /usr/local/bin/remakeIproute.py
+    chmod 777 /usr/local/bin/rmkip.py
 
 
     echo "#################################################";

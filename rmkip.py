@@ -38,7 +38,8 @@ for Placa in PlacasDeRede:
         # Executa a condição para obter os IP dos adaptadores de rede
         if(Valor == "inet" and Posicao < len(RetornoShowPlaca)):
             # Cria uma lista concatenando o nome do adaptador e o IP
-            Informacoes.append("Nome do Adaptador: " + Placa + " == IP: " + RetornoShowPlaca[Posicao+1])
+            Informacoes.append("Nome do Adaptador: " + Placa + (' ' * (10-len(Placa))) + " IPv4: " + RetornoShowPlaca[Posicao+1] + (' ' * (19-len(RetornoShowPlaca[Posicao+1]))))
+        
         # Executa a condição para obter os MACs dos adaptadores de rede
         if(Valor.startswith("link/") and Posicao < len(RetornoShowPlaca)):
             # Cria uma lista com os endereços MAC
@@ -51,7 +52,7 @@ print(" == ".join(PlacasDeRede)+ "\n")
 # Percorre a lista de informações geradas anteriormente
 for x in range(len(Informacoes)):
     # Mostra o Nome - IP e MAC de cada adaptador
-    print(Informacoes[x] + " == Endereço MAC: " + EnderecoMAC[x])
+    print(Informacoes[x] + " Endereço MAC: " + EnderecoMAC[x])
 
 
 

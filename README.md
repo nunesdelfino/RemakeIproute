@@ -8,7 +8,7 @@
 
 #### Para:
 
-![Alt text](https://github.com/nunesdelfino/RemakeIproute/blob/master/Depois.png "Depois")
+![Alt text](https://github.com/nunesdelfino/RemakeIproute/blob/master/Depois.png?raw=true "Depois")
 
 
 ## Usando

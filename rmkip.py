@@ -16,8 +16,6 @@ RetornoIpAll = RetornoIpAll.communicate()
 # Transforma a saída do comando em um lista dividida por ' '
 RetornoIpAll = str(RetornoIpAll).split(' ')
 
-print(RetornoIpAll)
-
 # Obtem o nome de cada adptador de rede conectado, Up ou Down
 # Percorre toda a lista gerada anteriormente
 for x, y in enumerate(RetornoIpAll):
